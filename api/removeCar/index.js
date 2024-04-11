@@ -15,8 +15,9 @@ module.exports = async function removeCar(context, req) {
       };
     } else {
       cars.splice(index, 1);
+      console.log(`Car with id ${carId} removed`);
       context.res = {
-        body: { message: `Car with id ${carId} removed` }
+        body: index 
       };
     }
   } catch (error) {
