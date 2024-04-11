@@ -1,5 +1,3 @@
-// removeCar.js
-
 const cars = require("../cars.json");
 
 module.exports = async function removeCar(context, req) {
